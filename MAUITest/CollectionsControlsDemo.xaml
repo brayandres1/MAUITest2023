@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MAUITest.CollectionsControlsDemo"
+             x:Class="MAUITest.BindingDemo"
              Title="Collections Controls Demo">
     <VerticalStackLayout>
         <!--<CarouselView>
@@ -42,7 +42,7 @@
             
         </CarouselView>-->
 
-        <ListView 
+        <!--<ListView 
             HasUnevenRows="True"
             SeparatorVisibility="None">
             <ListView.ItemsSource>
@@ -83,6 +83,21 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
 
-        </ListView>
+        </ListView>-->
+
+        <Picker>
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Colombia</x:String>
+                    <x:String>Perú</x:String>
+                    <x:String>Ecuador</x:String>
+                    <x:String>Bolivia</x:String>
+                    <x:String>Venezuela</x:String>
+                    <x:String>Panamá</x:String>
+                    <x:String>Argentina</x:String>
+                    <x:String>Brasil</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
     </VerticalStackLayout>
 </ContentPage>

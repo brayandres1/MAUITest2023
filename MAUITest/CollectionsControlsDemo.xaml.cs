@@ -1,8 +1,8 @@
 namespace MAUITest;
 
-public partial class CollectionsControlsDemo : ContentPage
+public partial class BindingDemo : ContentPage
 {
-	public CollectionsControlsDemo()
+	public BindingDemo()
 	{
 		InitializeComponent();
 	}
