@@ -1,18 +1,43 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Models="clr-namespace:MAUITest.BindingDemoTest"
              x:Class="MAUITest.BindingDemoTest.BindingDemo"
              Title="Binding Demo">
+
+    <ContentPage.Resources>
+        <Models:Person
+            x:Key="person"
+            Name="Manuela Alvarez"
+            Address="Calle Luna Calle Sol"
+            Phone="+57 314 577 7162"/>
+    </ContentPage.Resources>
+    
     <VerticalStackLayout
          VerticalOptions="Center" 
             HorizontalOptions="Center" >
-        <Label 
+        <!--<Label 
             x:Name="lblName"
             FontSize="50"
             HorizontalOptions="Center"
             VerticalOptions="Center"
-            Text="No binding yet"   />
+            Text="{Binding Name, Source={StaticResource person}}"/>-->
 
+        <Label             
+            FontSize="30"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Text="{Binding Name}"/>
+        <Label             
+            FontSize="30"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Text="{Binding Phone}"/>
+        <Label             
+            FontSize="30"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Text="{Binding Address}"/>
         <Button
             x:Name="btnOk"
             Text="Bind"

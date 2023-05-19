@@ -13,7 +13,7 @@ public partial class App : Application
         //navPage.Title = "Demo MAUI";
         //MainPage = navPage;
 
-        MainPage = new NavigationPage(new BindingDemo());
+        MainPage = new NavigationPage(new SliderPage());
 
 
 

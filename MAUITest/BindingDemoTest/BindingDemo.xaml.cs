@@ -16,11 +16,14 @@ public partial class BindingDemo : ContentPage
 			Address = "Calle Luna Calle Sol"
 		};
 
-		var personBinding = new Binding();
-		personBinding.Source = person;
-		personBinding.Path = "Name";
+		BindingContext = person;
+		//lblName.SetBinding(Label.TextProperty, "Name");
 
-		lblName.SetBinding(Label.TextProperty, personBinding);
+		//var personBinding = new Binding();
+		//personBinding.Source = person;
+		//personBinding.Path = "Name";
 
-    }
+		//lblName.SetBinding(Label.TextProperty, personBinding);
+
+	}
 }
