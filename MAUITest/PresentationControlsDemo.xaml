@@ -8,17 +8,31 @@
             Color="Green"
             HeightRequest="200"/>
 
+        <Ellipse
+            Margin="0,-100,0,0"
+            Fill="Yellow"
+            HeightRequest="200"
+            WidthRequest="200"
+            Stroke="Red"
+            StrokeThickness="10"/>
+        
         <Label
-            Text="Este es un label"
+            Text="Andres Velez"
             TextColor="Black"
             FontSize="Title"
             FontAttributes="Bold"
             HorizontalTextAlignment="Center"/>
 
-        <Ellipse
-            Fill="Yellow"
-            HeightRequest="200"
-            WidthRequest="200"/>
+        <Line
+            Stroke="Purple"
+            StrokeThickness="5"
+            X1="0"
+            Y1="1"
+            X2="500"
+            Y2="0"/>
+
+
+
 
     </VerticalStackLayout>
 </ContentPage>
