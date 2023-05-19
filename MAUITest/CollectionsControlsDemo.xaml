@@ -4,7 +4,7 @@
              x:Class="MAUITest.CollectionsControlsDemo"
              Title="Collections Controls Demo">
     <VerticalStackLayout>
-        <CarouselView>
+        <!--<CarouselView>
             <CarouselView.ItemsSource>
                 <x:Array Type="{x:Type x:String}">
                     <x:String>Colombia</x:String>
@@ -40,6 +40,49 @@
                 </DataTemplate>
             </CarouselView.ItemTemplate>
             
-        </CarouselView>
+        </CarouselView>-->
+
+        <ListView 
+            HasUnevenRows="True"
+            SeparatorVisibility="None">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Colombia</x:String>
+                    <x:String>Perú</x:String>
+                    <x:String>Ecuador</x:String>
+                    <x:String>Bolivia</x:String>
+                    <x:String>Venezuela</x:String>
+                    <x:String>Panamá</x:String>
+                    <x:String>Argentina</x:String>
+                    <x:String>Brasil</x:String>
+                </x:Array>
+            </ListView.ItemsSource>
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <VerticalStackLayout
+                        Margin="10">
+                            <Frame
+                        Padding="10"
+                        VerticalOptions="Center"
+                        Margin="10"
+                        BackgroundColor="Silver"
+                        HeightRequest="80"
+                        WidthRequest="200">
+
+                                <Label 
+                            FontSize="20"
+                            FontAttributes="Bold"
+                            TextColor="Purple"
+                            Text="{Binding .}"/>
+                            </Frame>
+                        </VerticalStackLayout>
+                    </ViewCell>
+                   
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
     </VerticalStackLayout>
 </ContentPage>
