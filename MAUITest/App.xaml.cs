@@ -12,7 +12,7 @@ public partial class App : Application
         //navPage.Title = "Demo MAUI";
         //MainPage = navPage;
 
-        MainPage = new NavigationPage(new FlyoutPageDemo());
+        MainPage = new NavigationPage(new TabbedPageDemo());
 
 
 
