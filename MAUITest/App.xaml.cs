@@ -15,7 +15,7 @@ public partial class App : Application
         //navPage.Title = "Demo MAUI";
         //MainPage = navPage;
 
-        MainPage = new NavigationPage(new PeopleView());
+        MainPage = new NavigationPage(new CommandsView());
 
 
 

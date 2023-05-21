@@ -97,8 +97,4 @@
 	  </MauiXaml>
 	</ItemGroup>
 
-	<ItemGroup>
-	  <Folder Include="MVVM\Converters\" />
-	</ItemGroup>
-
 </Project>
