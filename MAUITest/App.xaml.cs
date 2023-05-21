@@ -1,4 +1,6 @@
 ﻿using MAUITest.BindingDemoTest;
+using MAUITest.MVVM.Views;
+
 namespace MAUITest;
 
 public partial class App : Application
@@ -13,7 +15,7 @@ public partial class App : Application
         //navPage.Title = "Demo MAUI";
         //MainPage = navPage;
 
-        MainPage = new NavigationPage(new SliderPage());
+        MainPage = new NavigationPage(new PeopleView());
 
 
 
